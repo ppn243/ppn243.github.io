@@ -1,0 +1,12 @@
+#border_right {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 6rem;
+    padding: 20px 20px;
+}
+.text_top {
+    margin: 0 30px;
+}
+#top {
+    display: flex;
+}

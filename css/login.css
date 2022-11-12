@@ -1,0 +1,26 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+body {
+    /* background-image: linear-gradient(to right,#ff7d47, #819ca9); */
+    background-color: rgba(255, 255, 255, 0.263);
+  }
+  #box {
+    background-color: white;
+  }
+  #btn1 {
+    position: relative;
+  }
+  #btn1::after {
+    content: 'OR';
+    position: absolute;
+    bottom: -35px;
+    left: 47%;
+    color: black;
+    background-color: white;
+    padding: 0 6px;
+  }
