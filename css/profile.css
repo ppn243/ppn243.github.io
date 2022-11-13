@@ -1,0 +1,23 @@
+#avatar {
+    position: relative;
+}
+#avatar #btn_avatar {
+    display: inline-block;
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    transform: translateX(-40%);
+    border-radius: 50%;
+    background: rgb(209, 192, 192);
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    transition: all 0.2s;
+}
+#avatar #btn_avatar:hover {
+    font-size: 42px;
+    width: 72px;
+    height: 72px;
+}
