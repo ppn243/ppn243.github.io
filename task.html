@@ -126,7 +126,7 @@
                     <div id="border_right">
                         <ul class="nav nav-tabs btn_left">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                <a  style="background-color: rgba(54, 61, 65, 0.71);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                                     aria-expanded="false">Setting</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">+Create New</a></li>
@@ -140,12 +140,18 @@
                             </li>
                         </ul>
                         <div class="btn_right">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">+New
+                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">+New
                                 Task</button>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"
+                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"
                                 data-whatever="@fat">+Description</button>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3"
+                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3"
                                 data-whatever="@getbootstrap">+Comments</button>
+                                <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4"
+                                data-whatever="@getbootstrap">Share</button>
+                                <div class="user_acc">
+                                    <i class="fa-solid fa-user"></i>
+                                    <h1>USER</h1>
+                                </div>     
                         </div>
                         
                         <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
@@ -164,12 +170,18 @@
                                                 <label for="recipient-name" class="col-form-label">Name Task</label>
                                                 <input type="text" class="form-control" id="recipient-name">
                                             </div>
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">Description</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">Time</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Send message</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -226,6 +238,32 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Share this list</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label">Invite:</label>
+                                      <input type="email" class="form-control" id="recipient-name" placeholder="Name | Email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">User:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Text">
+                                        <input type="text" class="form-control mt-2" id="recipient-name" placeholder="Text">
+                                      </div>
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <div id="accordion">
                         <div class="card">
