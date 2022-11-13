@@ -61,3 +61,41 @@ body {
     align-items:center;
     padding-left: 20px;
 }
+h5 {
+    display: flex;
+    justify-content:space-between;
+}
+.nav-link.dropdown-toggle::after {
+    display: none;
+} 
+.nav-link.dropdown-toggle {
+    color: black;
+    font-size: 30px;
+    padding-top: 0;
+    border: none;
+}
+#dropdown_main li a button {
+    background-color: none;
+}
+#dropdown_main {
+    position: absolute;
+    right: 0;
+}
+.btn_modal{
+    width: 100%;
+    padding: 0;
+    background-color: rgb(51, 175, 142);
+}
+li  {
+    padding: 0;
+}
+.dropdown-item {
+    padding: 0;
+}
+.drop_down {
+    position: relative;
+}
+#navbarDropdownMenuLink-4 {
+    font-size: 18px;
+    padding-top: 10px;
+}

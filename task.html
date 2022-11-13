@@ -35,7 +35,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-info"
                             aria-labelledby="navbarDropdownMenuLink-4">
                             <a class="dropdown-item" href="/profile.html">My account</a>
-                            <a class="dropdown-item" href="./login.html">Log out</a>
+                            <a class="dropdown-item" href="/login.html">Log out</a>
                         </div>
                     </li>
                 </ul>
@@ -93,7 +93,7 @@
                 <div id="sidebar_left" class="col-2">
                     <div id="border_left">
                         <h1 style="padding: 0 0 20px 50px;">LOGO</h1>
-                    </div> 
+                    </div>
                     <form class="border_bottom d-flex px-2 pt-2">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -107,7 +107,7 @@
                         <h5 style="padding-top:8px">Task</h5>
                     </div>
                     <div class="border_bottom">
-                        <i style="padding-right: 15px;"  class="fa-solid fa-bell"></i>
+                        <i style="padding-right: 15px;" class="fa-solid fa-bell"></i>
                         <h5 style="padding-top:8px">Notification</h5>
                     </div>
                     <div class="border_bottom">
@@ -126,8 +126,8 @@
                     <div id="border_right">
                         <ul class="nav nav-tabs btn_left">
                             <li class="nav-item dropdown">
-                                <a  style="background-color: rgba(54, 61, 65, 0.71);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                    aria-expanded="false">Setting</a>
+                                <a style="background-color: rgba(54, 61, 65, 0.71);" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Setting</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">+Create New</a></li>
                                     <li><a class="dropdown-item" href="#">+Rename</a></li>
@@ -136,24 +136,29 @@
                                         <hr class="dropdown-divider">
                                     </li>
                                 </ul>
-                                
+
                             </li>
                         </ul>
                         <div class="btn_right">
-                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">+New
+                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button"
+                                class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"
+                                data-whatever="@mdo">+New
                                 Task</button>
-                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"
+                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button"
+                                class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"
                                 data-whatever="@fat">+Description</button>
-                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3"
+                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button"
+                                class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3"
                                 data-whatever="@getbootstrap">+Comments</button>
-                                <button style="background-color: rgba(54, 61, 65, 0.71);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4"
+                            <button style="background-color: rgba(54, 61, 65, 0.71);" type="button"
+                                class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4"
                                 data-whatever="@getbootstrap">Share</button>
-                                <div class="user_acc">
-                                    <i class="fa-solid fa-user"></i>
-                                    <h1>USER</h1>
-                                </div>     
+                            <div class="user_acc">
+                                <i class="fa-solid fa-user"></i>
+                                <h1>USER</h1>
+                            </div>
                         </div>
-                        
+
                         <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -238,41 +243,72 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Share this list</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <form>
-                                    <div class="mb-3">
-                                      <label for="recipient-name" class="col-form-label">Invite:</label>
-                                      <input type="email" class="form-control" id="recipient-name" placeholder="Name | Email">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Share this list</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">User:</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Text">
-                                        <input type="text" class="form-control mt-2" id="recipient-name" placeholder="Text">
-                                      </div>
-                                  </form>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Invite:</label>
+                                                <input type="email" class="form-control" id="recipient-name"
+                                                    placeholder="Name | Email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">User:</label>
+                                                <input type="text" class="form-control" id="recipient-name"
+                                                    placeholder="Text">
+                                                <input type="text" class="form-control mt-2" id="recipient-name"
+                                                    placeholder="Text">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Done</button>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
-                                </div>
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
+                    
                     <div id="accordion">
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    <button class="btn btn-link task" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
                                         TASK #1
                                     </button>
+                                    <ul class="nav nav-tabs drop_down">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                role="button" aria-expanded="false">...</a>
+                                            <ul id="dropdown_main" class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#"><button
+                                                            type="button" class="btn_modal" data-toggle="modal"
+                                                            data-target="#exampleModal6"
+                                                            data-whatever="@getbootstrap">Edit</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal7"
+                                                    data-whatever="@getbootstrap">Duplicate</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal8"
+                                                    data-whatever="@getbootstrap">Sharing</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal9"
+                                                    data-whatever="@getbootstrap">Delete</button></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </h5>
                             </div>
 
@@ -290,6 +326,30 @@
                                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         TASK #2
                                     </button>
+                                    <ul class="nav nav-tabs drop_down">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                role="button" aria-expanded="false">...</a>
+                                            <ul id="dropdown_main" class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#"><button
+                                                            type="button" class="btn_modal" data-toggle="modal"
+                                                            data-target="#exampleModal6"
+                                                            data-whatever="@getbootstrap">Edit</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal7"
+                                                    data-whatever="@getbootstrap">Duplicate</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal8"
+                                                    data-whatever="@getbootstrap">Sharing</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal9"
+                                                    data-whatever="@getbootstrap">Delete</button></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
@@ -307,6 +367,30 @@
                                         aria-controls="collapseThree">
                                         TASK #3
                                     </button>
+                                    <ul class="nav nav-tabs drop_down">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                role="button" aria-expanded="false">...</a>
+                                            <ul id="dropdown_main" class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#"><button
+                                                            type="button" class="btn_modal" data-toggle="modal"
+                                                            data-target="#exampleModal6"
+                                                            data-whatever="@getbootstrap">Edit</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal7"
+                                                    data-whatever="@getbootstrap">Duplicate</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal8"
+                                                    data-whatever="@getbootstrap">Sharing</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal9"
+                                                    data-whatever="@getbootstrap">Delete</button></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
@@ -327,10 +411,33 @@
                             <div class="card-header" id="headingFour">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                         TASK #4
                                     </button>
+                                    <ul class="nav nav-tabs drop_down">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                role="button" aria-expanded="false">...</a>
+                                            <ul id="dropdown_main" class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#"><button
+                                                            type="button" class="btn_modal" data-toggle="modal"
+                                                            data-target="#exampleModal6"
+                                                            data-whatever="@getbootstrap">Edit</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal7"
+                                                    data-whatever="@getbootstrap">Duplicate</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal8"
+                                                    data-whatever="@getbootstrap">Sharing</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal9"
+                                                    data-whatever="@getbootstrap">Delete</button></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </h5>
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
@@ -351,10 +458,33 @@
                             <div class="card-header" id="headingFive">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseFive" aria-expanded="false"
-                                        aria-controls="collapseFive">
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                         TASK #5
                                     </button>
+                                    <ul class="nav nav-tabs drop_down">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                role="button" aria-expanded="false">...</a>
+                                            <ul id="dropdown_main" class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#"><button
+                                                            type="button" class="btn_modal" data-toggle="modal"
+                                                            data-target="#exampleModal6"
+                                                            data-whatever="@getbootstrap">Edit</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal7"
+                                                    data-whatever="@getbootstrap">Duplicate</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal8"
+                                                    data-whatever="@getbootstrap">Sharing</button></a></li>
+                                                <li><a class="dropdown-item" href="#"><button
+                                                    type="button" class="btn_modal" data-toggle="modal"
+                                                    data-target="#exampleModal9"
+                                                    data-whatever="@getbootstrap">Delete</button></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </h5>
                             </div>
                             <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
@@ -372,6 +502,104 @@
                             </div>
                         </div>
                     </div>
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Name Task:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Duplicate</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Duplicate List:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Sharing</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Sharing:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Delete Task</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
