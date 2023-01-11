@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="/js/register.js"></script>
+    <script src="/js/logout.js"></script>
+</head>
+
+<body>
+    <!--Navbar -->
+    <header>
+        <div class="header_top d-flex justify-content-between px-sm-2" style="padding-top: 0px; padding-bottom:0px">
+            <div class="header_top_left ">
+                <a href="#"><i class="header_icon_facebook fab fa-facebook-square"></i></a>
+                <a href="#"><i class="header_icon_twitter fab fa-twitter"></i></a>
+                <a href="#"><i class="header_icon_google fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="header_icon_link fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="header_top_right">
+                <ul style="list-style-type: none">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> Profile </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-info"
+                            aria-labelledby="navbarDropdownMenuLink-4">
+                            <a class="dropdown-item" href="/profile.html">My account</a>
+                            <a class="dropdown-item" href="./login.html">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_buttom">
+            <div class="header_buttom_content">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                    <div class="header_logo">
+                        <a class="header_logo_link navbar-brand text-uppercase px-0 my-0"
+                            href="/homepage.html"><span>M</span>erged</a>
+                    </div>
+                    <div class="header_buttom_nav">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#header_menu" aria-controls="header_menu" aria-expanded="true"
+                            aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="header_menu">
+                            <ul class="navbar-nav" id="header_nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link header_bottom_link" aria-current="page"
+                                        href="./homepage.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header_bottom_link" href="#">template</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header_bottom_link" href="#">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header_bottom_link" href="#">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button style="border-radius: 20px;" class="nav-link header_bottom_link"><a href="/login.html">Login</a></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button style="border-radius: 20px;" class="nav-link header_bottom_link"><a href="/register.html">Register</a></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--/.Navbar -->
+    <div class="container mt-5">
+        <div id="box" style="border-radius: 10px; border: solid 1px black;" class="px-5 py-3">
+            <div class="row">
+                <div class="col-md-6 col-sm-7 ">
+                    <img class="img-fluid" style="height: 100%;" src="/image/marginalia-working-process.gif" alt="">
+                </div>
+                <div class="col-md-6 col-sm-5">
+                    <form method="POST" onsubmit="return registerFunction();">
+                        <h1 style="text-align: center; font-size: 30px;">CREATE YOUR ACCOUNT</h1>
+                        <h5 style="text-align: center; font-size: 15px;">Enter the fields below to get started</h5>
+                        <button id="btn1" class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
+                            type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+                        <div style="border-bottom:3px solid black; margin-top: 20px;"></div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- First Name input -->
+                                <div class="form-outline mb-4 mt-4">
+                                    <h6 style="font-weight: bold;text-align: center;">First Name*</h6>
+                                    <input style="height: 40px; font-size: 14px;" placeholder="Enter" type="email"
+                                        class="w3-input" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Last Name input -->
+                                <div class="form-outline mb-4 mt-4">
+                                    <h6 style="font-weight: bold;text-align: center;">Last Name*</h6>
+                                    <input style="height: 40px; font-size: 13px;" placeholder="Enter" type="email"
+                                        class="w3-input" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <h6 style="font-weight: bold; text-align: center;">Email*</h6>
+                            <input style="height: 40px; font-size: 13px; width:60px" placeholder="Enter" type="email"
+                                class="w3-input w3-animate-input" id="username"/>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <h6 style="font-weight: bold; text-align: center;">Password*</h6>
+                            <input style="height: 40px;font-size: 13px;width: 60px" placeholder="Enter" type="password"
+                                class="w3-input w3-animate-input" id="password" />
+                        </div>
+
+                        <!-- Confirm Password input -->
+                        <div class="form-outline mb-4">
+                            <h6 style="font-weight: bold;text-align: center;">Confirm Your Password*</h6>
+                            <input style="height: 40px; font-size: 13px;width: 60px" placeholder="Enter" type="password"
+                                class="w3-input w3-animate-input" id="confirm_password"/>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Create your account</button>
+
+                        <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                            <a class="mr-3" style="color: black;text-decoration: none;" href="#!">Already have an
+                                account?</a>
+                            <a href="/login.html">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-center mt-5" style="background-color: #363d41;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2 text-light">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4 text-light">
+                                <input type="email" id="form5Example27" class="form-control" />
+                                <label class="form-label" for="form5Example27">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-light text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-light" href="https://mdbootstrap.com/">ppn.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--/.footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

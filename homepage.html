@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+    <!--Navbar -->
+    <header>
+        <div class="header_top d-flex justify-content-between px-sm-2" style="padding-top: 0px; padding-bottom:0px">
+            <div class="header_top_left ">
+                <a href="#"><i class="header_icon_facebook fab fa-facebook-square"></i></a>
+                <a href="#"><i class="header_icon_twitter fab fa-twitter"></i></a>
+                <a href="#"><i class="header_icon_google fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="header_icon_link fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="header_top_right">
+                <ul style="list-style-type: none">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> Profile </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-info"
+                            aria-labelledby="navbarDropdownMenuLink-4">
+                            <a class="dropdown-item" href="/profile.html">My account</a>
+                            <a class="dropdown-item" onclick="logOut(event)">Log out</a>
+                            <a class="dropdown-item" href="/forgotpassword.html">Change Password</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_buttom">
+            <div class="header_buttom_content">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                    <div class="header_logo">
+                        <a class="header_logo_link navbar-brand text-uppercase px-0 my-0"
+                            href="/homepage.html"><span>M</span>erged</a>
+                    </div>
+                    <div class="header_buttom_nav">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#header_menu" aria-controls="header_menu" aria-expanded="true"
+                            aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="header_menu">
+                            <ul class="navbar-nav" id="header_nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link header_bottom_link" aria-current="page"
+                                        href="./homepage.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header_bottom_link" href="#">template</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header_bottom_link" href="#">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header_bottom_link" href="#">FAQ</a>
+                                </li>
+                                <li id="login" class="nav-item">
+                                    <button id="user_login" style="border-radius: 20px;"
+                                        class="nav-link header_bottom_link"><a href="/login.html">Login</a></button>
+                                </li>
+                                <div id="register">
+                                    <li class="nav-item">
+                                        <button id="user_login" style="border-radius: 20px;"
+                                            class="nav-link header_bottom_link"> <a
+                                                href="/register.html">Register</a></button>
+
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--/.Navbar -->
+
+    <!-- body -->
+    <section id="body-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="col_left" class="col-md-7 mt-5">
+                    <h1 id="text1">Where<span style="color: #ffea00;"> teams get</span> <span style="color: #8e0038;">
+                            work
+                            done</span>
+                    </h1>
+                    <form class="mt-3">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">
+                                <h4>Email address*</h4>
+                            </label>
+                            <input type="email" class="form-control w-75" id="exampleFormControlInput1"
+                                placeholder="Enter your email address">
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-start mt-5">
+                        <a href="/task.html" style="border-radius: 30px;" type="button"
+                            class="btn btn-outline-info w-25">Get
+                            Started</a>
+
+                        <p id="text2">free forever,<br>No credit card.</p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <img class="px-1" src="/image/star.png" alt="">
+                        <img class="px-1" src="/image/star.png" alt="">
+                        <img class="px-1" src="/image/star.png" alt="">
+                        <img class="px-1" src="/image/star.png" alt="">
+                        <img class="px-1" src="/image/star.png" alt="">
+                    </div>
+                    <p class="mt-4">Base on 10000+</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid h-100" src="/image/taxi-online-education-3.gif" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--/.body -->
+
+    <!-- footer -->
+    <footer class="text-center" style="background-color: #363d41;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2 text-light">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4 text-light">
+                                <input type="email" id="form5Example27" class="form-control" />
+                                <label class="form-label" for="form5Example27">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-light text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-light" href="https://mdbootstrap.com/">ppn.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--/.footer -->
+    <script src="/js/logout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

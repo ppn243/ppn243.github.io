@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<!--Navbar -->
+<header>
+    <div class="header_top d-flex justify-content-between px-sm-2" style="padding-top: 0px; padding-bottom:0px">
+        <div class="header_top_left ">
+            <a href="#"><i class="header_icon_facebook fab fa-facebook-square"></i></a>
+            <a href="#"><i class="header_icon_twitter fab fa-twitter"></i></a>
+            <a href="#"><i class="header_icon_google fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="header_icon_link fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="header_top_right">
+            <ul style="list-style-type: none">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i> Profile </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-info"
+                        aria-labelledby="navbarDropdownMenuLink-4">
+                        <a class="dropdown-item" href="/profile.html">My account</a>
+                        <a class="dropdown-item" href="./login.html">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_buttom">
+        <div class="header_buttom_content">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                <div class="header_logo">
+                    <a class="header_logo_link navbar-brand text-uppercase px-0 my-0"
+                        href="/homepage.html"><span>M</span>erged</a>
+                </div>
+                <div class="header_buttom_nav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#header_menu" aria-controls="header_menu" aria-expanded="true"
+                        aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="header_menu">
+                        <ul class="navbar-nav" id="header_nav">
+                            <li class="nav-item active">
+                                <a class="nav-link header_bottom_link" aria-current="page"
+                                    href="./homepage.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header_bottom_link" href="#">template</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header_bottom_link" href="#">contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header_bottom_link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <button style="border-radius: 20px;" class="nav-link header_bottom_link"><a href="/login.html">Login</a></button>
+                            </li>
+                            <li class="nav-item">
+                                <button style="border-radius: 20px;" class="nav-link header_bottom_link"><a href="/register.html">Register</a></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--/.Navbar -->
+<body onload="getUser()">
+    
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-5">
+                <div id="avatar">
+                    <img class="rounded-circle" src="/image/image (1).png" alt="">
+                    <button id="btn_avatar"><i class="fa-solid fa-camera"></i></button>
+                </div>    
+                <h5 class=" ml-4 pl-5">User Name</h5>
+                <div style="display: flex; flex-direction: column;">
+                    <button type="button" class="btn btn-success w-50 mb-3">Save Changes</button>
+                    <button type="button" class="btn btn-danger w-50">Log out</button>
+                </div>         
+            </div>
+            <div class="col-7">
+                <h1 style="text-align: center">My Profile</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">User name</label>
+                        <input type="email" class="form-control" id="username"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Image</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter your email">
+                    </div>
+                    <h3>Change Password:</h3>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">New Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter ">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="text-center mt-5" style="background-color: #363d41;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2 text-light">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4 text-light">
+                                <input type="email" id="form5Example27" class="form-control" />
+                                <label class="form-label" for="form5Example27">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-light text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-light" href="https://mdbootstrap.com/">ppn.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--/.footer -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="/js/profile.js"></script>
+</body>
+
+</html>

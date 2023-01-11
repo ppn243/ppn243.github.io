@@ -1,0 +1,15 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: Geneva, Verdana, sans-serif;}
+#col_left {
+    padding: 0 50px 30px 100px;
+}
+#text1 {
+    font-size: 5vw;
+}
+body {
+    background-color: rgb(245, 238, 238);
+}
+#text2 {
+    padding-left: 30px;
+    height: 10px;
+    cursor: pointer;
+}
