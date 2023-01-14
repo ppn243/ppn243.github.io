@@ -13,11 +13,12 @@ function passwordFunction() {
   const confirm_password = document.getElementById("confirm_password").value;
 
   if (current_password != old_password) {
-    Swal.fire({
-      text: "Your old password is not matching your new password.",
-      icon: "error",
-      confirmButtonText: "OK",
-    });
+    alert("Your old password is not matching your new password.");
+    // Swal.fire({
+    //   text: "Your old password is not matching your new password.",
+    //   icon: "error",
+    //   confirmButtonText: "OK",
+    // });
     return false;
   } else {
     const xhttp = new XMLHttpRequest();
