@@ -15,10 +15,10 @@ function logOut(e) {
   e.preventDefault();
   Swal.fire({
     title: "Log Out",
-    text: "Login again",
+    text: "Goodbye",
     icon: "warning",
     showCancelButton: true,
-    confirmButtonColor: "#3085d6",
+    confirmButtonColor: "#blue",
     cancelButtonColor: "#d33",
     confirmButtonText: "Log Out",
   }).then((result) => {
@@ -41,3 +41,20 @@ function logOut(e) {
     }
   });
 }
+// var logout = document.getElementById("logoutbutton");
+
+// logout.addEventListener(
+//   "click",
+//   function () {
+//     localStorage.removeItem("jwt");
+//     localStorage.removeItem("uid");
+//     localStorage.removeItem("client");
+//     localStorage.removeItem("name");
+//     localStorage.removeItem("password");
+
+//     console.log("alo123");
+
+//     window.location.href = "login.html";
+//   },
+//   false
+// );

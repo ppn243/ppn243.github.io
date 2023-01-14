@@ -12,11 +12,12 @@ function loginFunction() {
   const password = document.getElementById("password").value;
 
   if (email == "") {
-    Swal.fire({
-      text: "Login failed! Your email is null",
-      icon: "error",
-      confirmButtonText: "OK",
-    });
+    alert("Login failed! Your email is null");
+    // Swal.fire({
+    //   text: "Login failed! Your email is null",
+    //   icon: "error",
+    //   confirmButtonText: "OK",
+    // });
     return false;
   } else if (password == "") {
     Swal.fire({
@@ -57,11 +58,9 @@ function loginFunction() {
             }
           });
         } else {
-          Swal.fire({
-            text: "Login failed! Your account is not existed. Check your email or password again",
-            icon: "error",
-            confirmButtonText: "OK",
-          });
+          alert(
+            "Login failed! Your account is not existed. Check your email or password again"
+          );
         }
       }
     };
