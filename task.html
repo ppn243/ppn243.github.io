@@ -215,7 +215,7 @@
                                         <div class="form-group">
                                             <label for="folder">Select task list for new task: </label>
                                             <select id="addtaskfolders_lists">
-                                                <option value="" disabled selected hidden> -- Choose folder -- </option>
+                                                <option value="" disabled selected hidden> Choose task list </option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -306,7 +306,7 @@
                                             <div class="form-group">
                                                 <label for="name">Choose task list to delete: </label>
                                                 <select id="deletefolder_lists">
-                                                    <option value="" disabled selected hidden> -- Choose folder -- </option>
+                                                    <option value="" disabled selected hidden> Choose task list</option>
                                                 </select>
                                             </div>
                                         </form>
@@ -328,7 +328,7 @@
                                 <h1 style="color: black;">Name Task List</h1>
                                 <br>
                                 <select style="margin-left: 20px;" id="folder_lists" autofocus onchange="selectFolder()">
-                                    <option value="1" disabled selected hidden> -- Choose folder -- </option>
+                                    <option value="1" disabled selected hidden> Choose task list </option>
                                 </select>
                             </div>
                             
@@ -411,7 +411,7 @@
                                         <div class="form-group">
                                             <label for="folder">Select folder to move task: </label>
                                             <select id="movetaskfolders_list">
-                                                <option value="" disabled selected hidden> -- Choose folder -- </option>
+                                                <option value="" disabled selected hidden> Choose task list </option>
                                             </select>
                                         </div>
                                     </form>
@@ -440,7 +440,7 @@
                                         <div class="form-group">
                                             <label for="name">Choose username to share:</label>
                                             <select id="users_list">
-                                                <option value="" disabled selected hidden> -- Choose user -- </option>
+                                                <option value="" disabled selected hidden>Choose user</option>
                                             </select>
                                         </div>
                                     </form>
@@ -494,13 +494,14 @@
                                     <form>
                                         <div class="form-group">
                                             <label for="folder">Select task list: </label>
-                                            <select id="updatefolder_lists" onchange="loadingOnchangeSelectUpdate()">
-                                                <option value="" disabled selected hidden> -- Choose folder -- </option>
-                                            </select>
+                                            <div class="custom-select" style="width:200px"><select  id="updatefolder_lists" onchange="loadingOnchangeSelectUpdate()">
+                                                <option value="" disabled selected hidden>Choose task list</option>
+                                            </select></div>
+                                            
                                         </div>
                                         <div class="form-group">
                                             <label for="name">New task list name:</label>
-                                            <input type="text" class="form-control" placeholder="Folder name"
+                                            <input type="text" class="form-control" placeholder="Task list name"
                                                 id="updatefolder_name">
                                         </div>
                                     </form>
@@ -530,7 +531,7 @@
                                         <div class="form-group">
                                             <label for="name">Choose task list to delete: </label>
                                             <select id="deletefolder_lists">
-                                                <option value="" disabled selected hidden> -- Choose  -- </option>
+                                                <option value="" disabled selected hidden> Choose</option>
                                             </select>
                                         </div>
                                     </form>
