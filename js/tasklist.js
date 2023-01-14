@@ -332,11 +332,11 @@ function fetchTask() {
               td_status.innerHTML = "Not done";
             } else {
               td_status.innerHTML = "Completed";
-              edit_button.style.display = "none";
-              share_button.style.display = "none";
-              completed_button.style.display = "none";
-              duplicate_button.style.display = "none";
-              move_button.style.display = "none";
+              // edit_button.style.display = "none";
+              // share_button.style.display = "none";
+              // completed_button.style.display = "none";
+              // duplicate_button.style.display = "none";
+              // move_button.style.display = "none";
             }
             if (!list["description"].trim()) {
               td_details.innerHTML = "No detail received.";
@@ -586,9 +586,7 @@ function fetchTask() {
               document.getElementsByClassName("btn btn-success 1")[counter];
             btn_completed.addEventListener("click", function () {
               document.getElementById("completedtask_label").innerHTML =
-                "Are you sure you want to mark <span class = 'thick'>" +
-                list["name"] +
-                "</span> task as done?";
+                "Are you sure checked <span class = 'thick'>" + list["name"];
               const confirm = document.getElementById("completed_btn");
               confirm.addEventListener("click", function () {
                 xhttp.open(
